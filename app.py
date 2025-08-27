@@ -11,9 +11,9 @@ from sdv.single_table import GaussianCopulaSynthesizer
 from new_sdv_2 import RangeConstraint, UniqueConstraint
 from new_sdv_2.constraints import apply_constraints
 
-st.set_page_config(page_title="new_sdv • Gaussian Copula", layout="wide")
+st.set_page_config(page_title="SDV improved • Gaussian Copula", layout="wide")
 
-st.title("new_sdv • Gaussian Copula Synthesizer")
+st.title("SDV improved • Gaussian Copula Synthesizer")
 st.markdown("Carica un CSV, configura **più vincoli** e genera dati sintetici.")
 
 # --- Sidebar: upload & settings
