@@ -7,7 +7,7 @@ license = "MIT"
 readme = "README.md"
 
 # If your package lives in src/new_sdv_2/
-packages = [{ include = "new_sdv_2", from = "src" }]
+packages = [{ include = "new_sdv_2" }]
 
 [tool.poetry.dependencies]
 # Set your supported Python range
