@@ -8,18 +8,12 @@ readme = "README.md"
 packages = [{ include = "new_sdv_2" }]
 
 [tool.poetry.dependencies]
-python = ">=3.8,<3.13"
-sdv = ">=1.4,<2.0"
-pandas = ">=1.5,<3.0"
-numpy = ">=1.23,<3.0"
-numpy>=1.26
+streamlit>=1.33
+plotly>=5.23,<6
 pandas>=2.2
+numpy>=1.26
 scipy>=1.11
-plotly>=5.23,<6  # only if your examples need it
-torch>=2.4     # uncomment only if you actually import torch
-pytest>=7
-[tool.poetry.group.dev.dependencies]
-jupyter = "^1.0.0"
+torch>=2.4
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
