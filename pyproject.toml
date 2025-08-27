@@ -5,15 +5,24 @@ description = "SDV extension: High-cardinality adapter (Top-K + Hash Buckets) fo
 authors = ["You <you@example.com>"]
 license = "MIT"
 readme = "README.md"
-packages = [{ include = "new_sdv_2" }]
+
+# If your package lives in src/new_sdv_2/
+packages = [{ include = "new_sdv_2", from = "src" }]
 
 [tool.poetry.dependencies]
-streamlit>=1.33
-plotly>=5.23,<6
-pandas>=2.2
-numpy>=1.26
-scipy>=1.11
-torch>=2.4
+# Set your supported Python range
+python = ">=3.12,<3.14"
+
+# App + data stack (strings are required in TOML)
+streamlit = ">=1.33"
+plotly = ">=5.23,<6"
+pandas = ">=2.2"
+numpy = ">=1.26"
+scipy = ">=1.11"
+torch = ">=2.4"
+
+[tool.poetry.group.dev.dependencies]
+pytest = ">=7.0"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
